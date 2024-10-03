@@ -1,0 +1,9 @@
+_templates_suffix: .j2
+# questions
+project_name:
+  type: str
+  help: What is your project name?
+
+module_name:
+  type: str
+  help: What is your Python module name?

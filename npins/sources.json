@@ -1,0 +1,62 @@
+{
+  "pins": {
+    "devshell": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "numtide",
+        "repo": "devshell"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "7c9e793ebe66bcba8292989a68c0419b737a22a0",
+      "url": "https://github.com/numtide/devshell/archive/7c9e793ebe66bcba8292989a68c0419b737a22a0.tar.gz",
+      "hash": "165601skgrlgvgr4h7hjbz80zp7zpn7z2c7qjh6bal8hmjmmlqwi"
+    },
+    "ides": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://git.atagen.co/atagen/ides"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "48e77e958582394416cb10b44dd1a365afb03b5f",
+      "url": null,
+      "hash": "0knd7g0d42bmqj49i1fa3nqnv9c3sihxhk96w0s0lqnvl2q1b1jm"
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.05pre782598.18dd725c2960/nixexprs.tar.xz",
+      "hash": "1p7kgyph7xkj57p19nbxpycmbchc6d9gwdznsmxhymrzyzi3if21"
+    },
+    "treefmt-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "numtide",
+        "repo": "treefmt-nix"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "815e4121d6a5d504c0f96e5be2dd7f871e4fd99d",
+      "url": "https://github.com/numtide/treefmt-nix/archive/815e4121d6a5d504c0f96e5be2dd7f871e4fd99d.tar.gz",
+      "hash": "1hfx2jsq2gmdxgx0hi83m1l617xf6p5qkmvj1xi8wnjklnayf65s"
+    },
+    "wrapper-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "viperML",
+        "repo": "wrapper-manager"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "8ebdb81ed03aa26e4c797af9c3e05f467c1f29ca",
+      "url": "https://github.com/viperML/wrapper-manager/archive/8ebdb81ed03aa26e4c797af9c3e05f467c1f29ca.tar.gz",
+      "hash": "0s1xrsghw5dspgri0v3ps8v5rylgdnii7wpdc01mfxf3l1g74q7k"
+    }
+  },
+  "version": 5
+}
