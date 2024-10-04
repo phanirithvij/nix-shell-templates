@@ -1,6 +1,8 @@
 let
   sources = import ./npins;
   pkgs = import sources.nixpkgs { };
+  inherit (pkgs) lib;
+  wrapper-manager = import sources.wrapper-manager { inherit lib; };
 in
 pkgs.mkShellNoCC {
   packages = with pkgs; [

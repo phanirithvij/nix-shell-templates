@@ -5,6 +5,18 @@
       "name": "nixpkgs-unstable",
       "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.11pre683804.a1d92660c6b3/nixexprs.tar.xz",
       "hash": "0lzd1g9x7ihscdajc2g9f0jyykymw6r1lq2ir5g0shjzjf0jc5la"
+    },
+    "wrapper-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "viperML",
+        "repo": "wrapper-manager"
+      },
+      "branch": "master",
+      "revision": "c936f9203217e654a6074d206505c16432edbc70",
+      "url": "https://github.com/viperML/wrapper-manager/archive/c936f9203217e654a6074d206505c16432edbc70.tar.gz",
+      "hash": "0gianl3jpl1nvns98mwai5r914652clxiyrfkbv6z713fjmlsn2r"
     }
   },
   "version": 3
