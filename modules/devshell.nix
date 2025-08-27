@@ -12,17 +12,15 @@ let
   suggestions = devshellsLib.mkShellSuggestions { inherit (cfg) shells; };
 
   # TODO helper for iterating over all enabled shells
-  allShells = lib.mkIf cfg.suggestShells (
-    lib.foldl (a: b: lib.recursiveUpdate a b) { } (
-      lib.map (name: {
-        ${name} = {
-          packages =
-            cfg.shells.${name}.packages
-            ++ lib.optionals cfg.suggestShells (devshellsLib.mkOtherShells cfg.shells name);
-          commands = lib.optionals cfg.suggestShells suggestions ++ cfg.shells.${name}.commands;
-        };
-      }) cfg._enabledShells
-    )
+  allShells = lib.foldl (a: b: lib.recursiveUpdate a b) { } (
+    lib.map (name: {
+      ${name} = {
+        packages =
+          cfg.shells.${name}.packages
+          ++ lib.optionals cfg.suggestShells (devshellsLib.mkOtherShells cfg.shells name);
+        commands = lib.optionals cfg.suggestShells suggestions ++ cfg.shells.${name}.commands;
+      };
+    }) cfg._enabledShells
   );
 in
 {
