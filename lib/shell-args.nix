@@ -47,7 +47,7 @@ let
             extraCommands = config.commands;
             enableTreefmt = false;
           };
-          readOnly = true;
+          #readOnly = true; #TODO bug, should work with readOnly but something changed and getting conflict
         };
       };
     }
