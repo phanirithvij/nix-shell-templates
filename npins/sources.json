@@ -21,15 +21,15 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "48e77e958582394416cb10b44dd1a365afb03b5f",
+      "revision": "451a384b9706553460f44bb1efc776a3064c4d18",
       "url": null,
-      "hash": "0knd7g0d42bmqj49i1fa3nqnv9c3sihxhk96w0s0lqnvl2q1b1jm"
+      "hash": "013wci1lkh399mzkxdibksqxx0fj5fs5s70d1gmrzr6j5gn5q6mp"
     },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.05pre782598.18dd725c2960/nixexprs.tar.xz",
-      "hash": "1p7kgyph7xkj57p19nbxpycmbchc6d9gwdznsmxhymrzyzi3if21"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-25.11pre851662.84c256e42600/nixexprs.tar.xz",
+      "hash": "0raxfvfnndnh0dk7qs11pdbmjpxslkpqg9ic87lyx3qw7jq8w5wl"
     },
     "treefmt-nix": {
       "type": "Git",
@@ -40,9 +40,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "815e4121d6a5d504c0f96e5be2dd7f871e4fd99d",
-      "url": "https://github.com/numtide/treefmt-nix/archive/815e4121d6a5d504c0f96e5be2dd7f871e4fd99d.tar.gz",
-      "hash": "1hfx2jsq2gmdxgx0hi83m1l617xf6p5qkmvj1xi8wnjklnayf65s"
+      "revision": "74e1a52d5bd9430312f8d1b8b0354c92c17453e5",
+      "url": "https://github.com/numtide/treefmt-nix/archive/74e1a52d5bd9430312f8d1b8b0354c92c17453e5.tar.gz",
+      "hash": "11a5l1amv6syjxhnnr0xclr2cja5wf6bfdqchpncfqi0ff7fih0a"
     },
     "wrapper-manager": {
       "type": "Git",
@@ -53,9 +53,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "8ebdb81ed03aa26e4c797af9c3e05f467c1f29ca",
-      "url": "https://github.com/viperML/wrapper-manager/archive/8ebdb81ed03aa26e4c797af9c3e05f467c1f29ca.tar.gz",
-      "hash": "0s1xrsghw5dspgri0v3ps8v5rylgdnii7wpdc01mfxf3l1g74q7k"
+      "revision": "8ad2484b485acad0632cb0af15b5eb704e3c1d0a",
+      "url": "https://github.com/viperML/wrapper-manager/archive/8ad2484b485acad0632cb0af15b5eb704e3c1d0a.tar.gz",
+      "hash": "11kcrkrnajzbhbyg5w2jhy5h5dw3ffn604pm37ikyird5z2r37cy"
     }
   },
   "version": 5
