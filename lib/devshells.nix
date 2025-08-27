@@ -9,6 +9,7 @@
   extraCommands ? [ ],
   packages ? [ ],
   enableTreefmt ? true,
+  treefmtCfg ? null,
   generalCategory ? "[general commands]",
 }:
 let
@@ -72,16 +73,19 @@ let
       inherit name;
     }) aliases;
 
-  treefmtCfg =
-    (treefmt-nix.evalModule pkgs (_: {
-      projectRootFile = "shell.nix";
-      programs.nixfmt.enable = true;
-      programs.deadnix.enable = true;
-      programs.statix.enable = true;
-    })).config.build;
+  treefmtCfg' =
+    if treefmtCfg == null then
+      (treefmt-nix.evalModule pkgs (_: {
+        projectRootFile = "shell.nix";
+        programs.nixfmt.enable = true;
+        programs.deadnix.enable = true;
+        programs.statix.enable = true;
+      })).config.build
+    else
+      treefmtCfg;
 
   treefmtCmds = mapCmdPackages {
-    packages = (builtins.attrValues treefmtCfg.programs) ++ [ treefmtCfg.wrapper ];
+    packages = (builtins.attrValues treefmtCfg'.programs) ++ [ treefmtCfg'.wrapper ];
     category = "formatter";
   };
 
@@ -124,6 +128,7 @@ in
       mkSelfAwareShell
       mkShellSuggestions
       mkOtherShells
+      treefmtCmds
       ;
   };
 }
