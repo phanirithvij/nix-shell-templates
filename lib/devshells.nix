@@ -107,7 +107,7 @@ let
   shellArgs = {
     inherit name packages;
     # only commands show up in menu
-    commands = (mapTools tools) ++ extraCommands ++ lib.optional enableTreefmt treefmtCmds;
+    commands = (mapTools tools) ++ extraCommands ++ (lib.optionals enableTreefmt treefmtCmds);
   };
   _selfshell = mkSelfAwareShell shellArgs;
 in
